@@ -21,20 +21,9 @@ button-text-color:#F5F4FA;
 
 /* GENERAL SECTION */
 
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
-}
-
 body {
   font-family: Roboto, sans-serif;
   color: var(--main-text-color);
-  margin: 0;
 }
 
 ul {
@@ -43,22 +32,6 @@ ul {
 
 .link {
   text-decoration: none;
-  padding: 0;
-  margin: 0;
-}
-
-h1,
-h2,
-h3,
-ul {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.container {
-  width: 1230px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .logo {
@@ -111,9 +84,6 @@ ul {
   color: var(--add-text-color);
   background-color: var(--add-background-color);
   letter-spacing: 0.06em;
-  text-align: center;
-  margin-bottom: 94px;
-  width: 1660;
 }
 
 .hero-title {
@@ -123,20 +93,15 @@ ul {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 30px;
 }
 
 .btn {
-  display: inline-block;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   color: var(--add-text-color);
   background-color: var(--nav-color);
-  padding: 10px 32px;
-  min-width: 200px;
 }
 
 /*********** VALUES SECTION **************/
@@ -144,8 +109,6 @@ ul {
 .values {
   font-size: 14px;
   letter-spacing: 0.03em;
-  background-color: rgb(212, 154, 154);
-  /* margin-bottom: 94px; */
 }
 
 .values-title {
@@ -153,21 +116,16 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  margin-bottom: 10px;
 }
 
 .values-info {
   font-size: 14px;
   line-height: 1.71;
   color: var(--second-text-color);
-  margin: 0;
 }
 
 /*********** PRODUCT SECTION **************/
-.product .container {
-  background-color: rgb(133, 112, 207);
-  margin-bottom: 54px;
-}
+
 .product-title {
   font-weight: 700;
   font-size: 36px;
@@ -176,31 +134,21 @@ ul {
   letter-spacing: 0.03em;
 }
 /*********** TEAM SECTION **************/
-.team .container {
-  outline: 2px solid rgb(243, 6, 46);
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .team-info {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  
 }
 
-.team-img{
-  margin-bottom: 30px;
-}
 .team-member {
   font-weight: 500;
   font-size: 16px;
-  margin-bottom: 10px;
 }
 .team-position {
   /* font-weight: 400; */
   color: var(--second-text-color);
-  margin-bottom: 30px;
+}
+
 /***********************************************/
 /********* PORTFOLIO.HTML**************/
 /***********************************************/
@@ -248,12 +196,12 @@ ul {
   letter-spacing: 0.03em;
 }
 
-.accent-footer .footer{
+.accent-footer {
   color: var(--add-text-color);
 }
 
 .contacts {
-  /* font-style: normal; */
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
