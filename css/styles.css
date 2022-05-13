@@ -67,11 +67,12 @@ ul {
 }
 
 /***********HEADER **********/
+.page-header {
+  border-bottom: 1px solid var(--buttom-line-portfolio);
+}
 
 .header {
   display: flex;
-
-  border-bottom: 1px solid var(--buttom-line-portfolio);
 }
 
 .logo {
