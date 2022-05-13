@@ -38,6 +38,11 @@ body {
   color: var(--main-text-color);
   margin: 0;
   width: 1600px;
+
+  border-top: 1px solid var(--add-nav-color);
+  border-left: 1px solid var(--add-nav-color);
+  border-right: 1px solid var(--add-nav-color);
+  border-bottom: 1px solid var(--buttom-line-portfolio);
 }
 
 ul {
@@ -66,9 +71,6 @@ ul {
 .header {
   display: flex;
 
-  border-top: 1px solid var(--add-nav-color);
-  border-left: 1px solid var(--add-nav-color);
-  border-right: 1px solid var(--add-nav-color);
   border-bottom: 1px solid var(--buttom-line-portfolio);
 }
 
