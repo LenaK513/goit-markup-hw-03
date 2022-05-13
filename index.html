@@ -20,23 +20,31 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="header">
-      <nav class="nav">
-        <a lang="en" href="" class="link logo"
-          >Web<span class="accent">Studio</span></a
-        >
-        <ul class="main-nav">
-          <li><a href="./index.html" class="link">Студия</a></li>
-          <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-          <li><a href="./index.html" class="link">Контакты</a></li>
+    <header class="page-header">
+      <div class="container header">
+        <nav class="nav">
+          <a lang="en" href="" class="link logo"
+            >Web<span class="accent">Studio</span></a
+          >
+          <ul class="main-nav">
+            <li class="item"><a href="./index.html" class="link">Студия</a></li>
+            <li class="item">
+              <a href="./portfolio.html" class="link">Портфолио</a>
+            </li>
+            <li class="item">
+              <a href="./index.html" class="link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="add-nav">
+          <li class="item">
+            <a href="mailto:info@example.com" class="link">info@example.com</a>
+          </li>
+          <li class="item">
+            <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
+          </li>
         </ul>
-      </nav>
-      <ul class="add-nav">
-        <li>
-          <a href="mailto:info@example.com" class="link">info@example.com</a>
-        </li>
-        <li><a href="tel:+380991111111" class="link">+38 099 111 11 11</a></li>
-      </ul>
+      </div>
     </header>
     <main class="main-section">
       <section class="hero">
@@ -48,7 +56,7 @@
       </section>
 
       <section>
-        <ul class="values">
+        <ul class="values container">
           <li>
             <h3 class="values-title">Внимание к деталям</h3>
             <p class="values-info">
@@ -79,59 +87,104 @@
           </li>
         </ul>
       </section>
-      <section class="product">
-        <h2 class="product-title">Чем мы занимаемся</h2>
-        <ul>
-          <li><img src="./images/box1.jpg" alt="notebook" width="370" /></li>
-          <li><img src="./images/box2.jpg" alt="phone" width="370" /></li>
-          <li><img src="./images/box3.jpg" alt="tab" width="370" /></li>
-        </ul>
+      <section>
+        <div class="container product">
+          <h2 class="title">Чем мы занимаемся</h2>
+          <ul class="product-photos">
+            <li class="item">
+              <img
+                src="./images/box1.jpg"
+                alt="notebook"
+                width="370"
+                class="photo"
+              />
+            </li>
+            <li class="item">
+              <img
+                src="./images/box2.jpg"
+                alt="phone"
+                width="370"
+                class="photo"
+              />
+            </li>
+            <li class="item">
+              <img
+                src="./images/box3.jpg"
+                alt="tab"
+                width="370"
+                class="photo"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="team">
-        <h2 class="product-title">Наша команда</h2>
-        <ul class="team-info">
-          <li>
-            <img
-              src="./images/person1.jpg"
-              alt="Игорь Демьяненко"
-              width="270"
-            />
-            <h3 class="team-member">Игорь Демьяненко</h3>
-            <p lang="en" class="team-position">Product Designer</p>
-          </li>
-          <li>
-            <img src="./images/person2.jpg" alt="Ольга Репина" width="270" />
-            <h3 class="team-member">Ольга Репина</h3>
-            <p lang="en" class="team-position">Frontend Developer</p>
-          </li>
-          <li>
-            <img src="./images/person3.jpg" alt="Николай Тарасов" width="270" />
-            <h3 class="team-member">Николай Тарасов</h3>
-            <p lang="en" class="team-position">Marketing</p>
-          </li>
-          <li>
-            <img src="./images/person4.jpg" alt="Михаил Ермаков" width="270" />
-            <h3 class="team-member">Михаил Ермаков</h3>
-            <p lang="en" class="team-position">UI Designer</p>
-          </li>
-        </ul>
+        <div class="container team-part">
+          <h2 class="title team-title">Наша команда</h2>
+          <ul class="team-info">
+            <li class="item">
+              <img
+                src="./images/person1.jpg"
+                alt="Игорь Демьяненко"
+                width="270"
+                class="list"
+              />
+              <h3 class="team-member">Игорь Демьяненко</h3>
+              <p lang="en" class="team-position">Product Designer</p>
+            </li>
+            <li class="item">
+              <img
+                src="./images/person2.jpg"
+                alt="Ольга Репина"
+                width="270"
+                class="list"
+              />
+              <h3 class="team-member">Ольга Репина</h3>
+              <p lang="en" class="team-position">Frontend Developer</p>
+            </li>
+            <li class="item">
+              <img
+                src="./images/person3.jpg"
+                alt="Николай Тарасов"
+                width="270"
+                class="list"
+              />
+              <h3 class="team-member">Николай Тарасов</h3>
+              <p lang="en" class="team-position">Marketing</p>
+            </li>
+            <li class="item">
+              <img
+                src="./images/person4.jpg"
+                alt="Михаил Ермаков"
+                width="270"
+                class="list"
+              />
+              <h3 class="team-member">Михаил Ермаков</h3>
+              <p lang="en" class="team-position">UI Designer</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
-      <a lang="en" href="" class="link logo"
-        >Web<span class="accent-footer">Studio</span></a
-      >
-      <address class="contacts">
-        <p class="contact-place">г. Киев, пр-т Леси Украинки, 26</p>
-        <ul class="contacts-info">
-          <li>
-            <a href="mailto:info@example.com" class="link">info@example.com</a>
-          </li>
-          <li>
-            <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
-          </li>
-        </ul>
-      </address>
+      <div class="container contact-address">
+        <a lang="en" href="" class="link logo"
+          >Web<span class="accent-footer">Studio</span></a
+        >
+        <address class="contacts">
+          <p class="contact-place">г. Киев, пр-т Леси Украинки, 26</p>
+          <ul class="contacts-info">
+            <li class="item">
+              <a href="mailto:info@example.com" class="link"
+                >info@example.com</a
+              >
+            </li>
+            <li class="item">
+              <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
