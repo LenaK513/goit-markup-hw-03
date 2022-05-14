@@ -19,6 +19,7 @@ button-text-color:#F5F4FA;
   --add-nav-color: #000000;
   --background: #e5e5e5;
   --buttom-line-portfolio: #ececec;
+  --border-line-portfolio: #eeeeee;
 }
 
 /* GENERAL SECTION */
@@ -37,12 +38,6 @@ body {
   font-family: Roboto, sans-serif;
   color: var(--main-text-color);
   margin: 0;
-  width: 1600px;
-
-  border-top: 1px solid var(--add-nav-color);
-  border-left: 1px solid var(--add-nav-color);
-  border-right: 1px solid var(--add-nav-color);
-  border-bottom: 1px solid var(--buttom-line-portfolio);
 }
 
 ul {
@@ -58,12 +53,12 @@ ul {
 }
 
 .container {
-  width: 1230px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 3px dotted blueviolet; */
+  outline: 3px dotted blueviolet;
 }
 
 /***********HEADER **********/
@@ -148,6 +143,8 @@ ul {
   background-color: var(--add-background-color);
   letter-spacing: 0.06em;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -158,7 +155,6 @@ ul {
   text-transform: uppercase;
   margin-bottom: 0;
   margin-top: 0px;
-  /* padding-top: 200px; */
 }
 
 .btn {
@@ -173,11 +169,13 @@ ul {
   min-width: 200px;
   border-radius: 4px;
   cursor: pointer;
-
-  /* margin-bottom: 200px; */
 }
 
 /*********** VALUES SECTION **************/
+.values-description {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .values {
   display: flex;
@@ -185,8 +183,6 @@ ul {
   letter-spacing: 0.03em;
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .values-title {
@@ -206,16 +202,26 @@ ul {
   margin-bottom: 0;
 }
 
+.values .item {
+  width: 270px;
+}
+
+.values .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 /*********** PRODUCT SECTION **************/
+.accentproduct-description {
+  padding-bottom: 94px;
+}
+
 .product {
   margin-top: 0;
-  padding-bottom: 94px;
 }
 
 .product-photos {
   display: flex;
   margin: 0;
-  padding: 0 15px;
 }
 
 .title {
@@ -249,7 +255,6 @@ ul {
   line-height: 1.19;
   letter-spacing: 0.03em;
   margin: 0;
-  padding: 0 15px;
 }
 
 .team-info .item.item:not(:last-child) {
@@ -258,9 +263,14 @@ ul {
 }
 
 .list {
-  margin-bottom: 30px;
   display: block;
 }
+
+.team-name {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-member {
   font-weight: 500;
   font-size: 16px;
@@ -273,28 +283,27 @@ ul {
   color: var(--second-text-color);
   margin-top: 0;
   margin-bottom: 0;
-  padding-bottom: 30px;
+
   text-align: center;
 }
 
 /***********************************************/
 /********* PORTFOLIO.HTML**************/
 /***********************************************/
+.photos {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 /*************SECTION  BUTTONS **********************/
 
 .apps {
   display: flex;
   margin: 0 auto;
-  padding: 0 15px;
+  margin-bottom: 50px;
 }
 
-.apps .item {
-  padding-bottom: 16px;
-  margin-bottom: 34px;
-}
-
-.apps .item:not(last-child) {
+.apps .item:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -328,8 +337,13 @@ ul {
   display: flex;
   flex-wrap: wrap;
   /* background-color: blueviolet; */
-  padding-right: 15px;
-  padding-left: 15px;
+}
+
+.project-name {
+  padding: 20px 24px;
+  /* border-right: 1px solid var(--border-line-portfolio);
+  border-left: 1px solid var(--border-line-portfolio);
+  border-bottom: 1px solid var(--border-line-portfolio); */
 }
 
 .project-title {
@@ -337,6 +351,8 @@ ul {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin: 0;
+  margin-bottom: 4px;
 }
 .project-type {
   /* font-weight: 400; */
@@ -344,6 +360,7 @@ ul {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
+  margin: 0;
 }
 
 .project .item {
